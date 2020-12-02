@@ -13,9 +13,7 @@ public class Uzd5 {
 
     }
         public static double suma(double a, double b, double c) {
-        double plotas = 0;
         double p =(a + b +c ) / 2;
-        plotas = Math.sqrt(p*(p-a)*(p-b)*(p-c));
-        return plotas;
+        return Math.sqrt(p*(p-a)*(p-b)*(p-c));
     }
 }

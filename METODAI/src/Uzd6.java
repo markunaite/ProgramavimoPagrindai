@@ -7,12 +7,11 @@ public class Uzd6 {
         double n = reader.nextDouble();
         System.out.println("Iveskite krastine: ");
         double a = reader.nextDouble();
-        System.out.printf("Pentagono plotas: %.3f", plotas(n, a));
+        System.out.printf("Pentagono plotas: %.3f", apskaiciuotiPlota(n, a));
     }
 
-        public static double plotas(double n, double a) {
-        double plotas = 0;
-        plotas = (n * a * a) / (4 * Math.tan(Math.PI/n));
+        public static double apskaiciuotiPlota(double n, double a) {
+        double plotas = (n * a * a) / (4 * Math.tan(Math.PI/n));
         return plotas;
         }
     }
