@@ -1,3 +1,5 @@
+package PraktinisDarbas1;
+
 import java.util.Scanner;
 
 public class Uzd1 {
