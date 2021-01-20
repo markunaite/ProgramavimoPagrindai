@@ -20,7 +20,7 @@ public class Uzd09 {
         }
 
         for (int i : arr) {
-            System.out.println(i);
+            System.out.println(i);  //eina per masyv1 ir printina random skaicius
         }
     }
 
