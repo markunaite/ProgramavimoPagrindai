@@ -74,10 +74,16 @@ public class masyvuMetodai {
     public static double vidurkis(double[] arr) {
         return suma(arr)/arr.length;
     }
+
+    public static double vidurkis(int[] arr) {
+        return (double) sum(arr) / arr.length;
+    }
+
+
     //https://stackabuse.com/remove-element-from-an-array-in-java/
     public static int[] removeElement(int myarray[], int index) {
         int n = myarray.length;
-        int newArray[] = new int[n - 1]; //sukuria nauja masyvu vienu elementu mazesniu nei pries rai duotas
+        int newArray[] = new int[n - 1]; //sukuria nauja masyva vienu elementu mazesniu nei pries rai duotas
         int newArrayIndex = 0;
         for (int i = 0; i < n; i++) {
             if(i != index) {   // pridedame i nauja masyva elementus , kuriu index nera lygus paduotam indeksui
@@ -88,4 +94,47 @@ public class masyvuMetodai {
         return newArray;
     }
 
+    public static int maxArr(int[] arr) {
+        int max = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+            }
+        }
+        return max;
+    }
+
+    public static int minArr(int[] arr) {
+        int min = arr[0];
+        for (int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+            }
+        }
+        return min;
+    }
+
+    public static int maxArrIndex(int[] arr) {
+        int max = arr[0];
+        int maxIndex = 0;
+        for(int i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                maxIndex = i;
+            }
+        }
+        return maxIndex;
+    }
+
+    public static int minArrIndex(int[] arr) {
+        int min = arr[0];
+        int minIndex = 0;
+        for(int i = 1; i < arr.length; i++) {
+            if (arr[i] < min) {
+                min = arr[i];
+                minIndex = i;
+            }
+        }
+        return minIndex;
+    }
 }
